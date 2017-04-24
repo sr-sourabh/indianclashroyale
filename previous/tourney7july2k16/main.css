@@ -1,0 +1,61 @@
+body{
+background:#00bfff;
+font-size:20;
+margin:0;
+
+}
+
+h1,h4,h2{
+font-family:arial;
+color:black;
+
+}
+p {
+color:white;
+background:white;
+font-family:arial;
+padding:5px 0px 5px 50px;
+
+
+}
+
+header{
+	background:#00bfff;
+	margin:0;
+}
+header h2{
+	display:inline;
+}
+
+nav ul{
+	
+	display:inline;
+	margin:0;
+}
+nav ul li {
+	list-style-type:none;
+	display:inline-block;
+	background:#87ceeb;
+	text-decoration:none;
+	color:white;
+	padding:5 15;
+	margin:0;
+}
+
+nav ul li a {
+	color:white;
+	text-decoration:none;
+	margin:0;
+        font-size:40;
+}
+.active{
+	background-color:#4CAF50;
+}
+
+
+
+
+
+
+
+
