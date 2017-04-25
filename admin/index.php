@@ -5,9 +5,11 @@
   <meta charset="utf-8">
   <title>Indian Clash Royale</title>
   <meta charset="utf-8">
+  <script src="http://www.w3schools.com/lib/w3data.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 </head>
 
@@ -33,7 +35,16 @@ if(isset($_POST) and isset($_POST['DelClan'])){
 ?>
 
   <body>
-    <div class="container-fluid">
+  
+    <div w3-include-html="/nav.html"></div>
+      <script>
+        w3IncludeHTML();
+      </script>
+      
+    <div class="container">
+    
+      
+    
       <h1>Indian Clash Royale</h1>
       <h2>List of Our Clans</h2>
       <form id="clan_list" method="post" action="viewClan.php">
@@ -51,6 +62,13 @@ if($result){
       <form id="clan_list" method="post" action="addClan.php">
         <button type="submit" name="add_clan" id="add_clan" class="btn btn-primary btn-block">Add New Clan</button>
       </form>
+      
     </div>
+    
+    <div w3-include-html="/footer.html"></div>
+      <script>
+        w3IncludeHTML();
+      </script>
+      
   </body>
 </html>

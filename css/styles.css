@@ -92,9 +92,14 @@ footer.row {
 .navigation button {
   min-width: 7em;
   background-color: #ff6666;
-  border-radius: 2em;
-  padding: 0.6em 1em;
+  border-radius:10px;
+  padding: 1em 1.5em;
   border: 0;
+}
+
+.navigation button:hover{
+  background-color:#ffd700;
+  color:black;
 }
 
 .navigation li a {
@@ -163,7 +168,7 @@ footer.row {
 
 .modal-body button {
   background-color: #88eeaa;
-  border-radius: 1em;
+  border-radius: 10px;
   padding: 0.5em;
   border: 0;
   margin: 1em 2em;
@@ -179,6 +184,16 @@ footer.row {
 .modal-dialog {
   width: 70em;
   max-width: 90%;
+}
+#clan_list button , #DelForm button , #members_list button , #add_member button , #DelMemberForm button , #add_clan button{
+  background-color:#ffc966;
+  color:black;
+  border-radius: 5px;
+}
+
+#clan_list button:hover , #DelForm button:hover , #members_list button:hover , #add_member button:hover , #DelMemberForm button:hover , #add_clan button {
+background-color:#1919ff;
+color:white;
 }
 
 

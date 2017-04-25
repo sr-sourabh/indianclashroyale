@@ -6,6 +6,7 @@
   <title>Indian Clash Royale</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="http://www.w3schools.com/lib/w3data.js"></script>
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
@@ -35,7 +36,13 @@ if(isset($_POST) and isset($_POST['member'])){
 ?>
 
   <body>
-    <div class="container-fluid">
+  
+    <div w3-include-html="/nav.html"></div>
+      <script>
+        w3IncludeHTML();
+      </script>
+  
+    <div class="container">
       <a href="index.php"><h1>Indian Clash Royale</h1></a>
       <?php
 if($id!=""){?>
@@ -58,6 +65,12 @@ if($id!=""){?>
             <button type="submit" name="save" id="save" class="btn btn-primary btn-block">Save</button>
           </form>
     </div>
+    
+     <div w3-include-html="/footer.html"></div>
+      <script>
+        w3IncludeHTML();
+      </script>
+    
   </body>
 
 </html>

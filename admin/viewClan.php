@@ -5,6 +5,7 @@
     <title>Indian Clash Royale</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="http://www.w3schools.com/lib/w3data.js"></script>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
@@ -39,7 +40,13 @@
     
   ?>
   <body>
-    <div class="container-fluid">
+    
+    <div w3-include-html="/nav.html"></div>
+      <script>
+        w3IncludeHTML();
+      </script>
+  
+    <div class="container">
       <a href="index.php"><h1>Indian Clash Royale</h1></a>
       <form id="DelForm" method="post" action="index.php">
         <h2>Members in <?php echo $categ; ?> 
@@ -61,5 +68,11 @@
         <button type="submit" name="add_member" id="add_member" value="new" class="btn btn-primary btn-block">Add New Member</button>
       </form>
     </div>
+    
+     <div w3-include-html="/footer.html"></div>
+      <script>
+        w3IncludeHTML();
+      </script>
+    
   </body>
 </html>
