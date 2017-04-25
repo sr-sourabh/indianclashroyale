@@ -9,14 +9,25 @@
   
 }
 
-#flappy
+.games
 {
 
-	border:
+	border:20px solid #E6BE8A;
+	border-radius:20px;
+	box-shadow:rgba(110,110,110, .6) 5px 5px 5px;
 	height:200px;
 	width:250px;
+	padding : 0px;
+	transition:transform 0.5s;
+	
 
 }
+
+.games:hover{
+
+transform:scale(1.2);
+}
+
 </style>
 
 <html>
@@ -35,8 +46,10 @@
       </script>
       <br><br>
       <div class = "list_of_games">
-        <img id = "flappy" src = "flappybird/flappybird.png">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-        <a href ="flappybird/index.html"  style= "font-size:30px;text-decoration:none;color:white;">Flappy Birds</a>
+        
+        <a href ="flappybird/index.html"  style= "font-size:30px;text-decoration:none;color:white;">
+        	<img class = "games" src = "flappybird/flappybird.png">
+        </a>
       </div>
       <br><br><br><br>
       <div w3-include-html="/footer.html"></div>
