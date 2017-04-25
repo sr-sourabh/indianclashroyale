@@ -1,3 +1,21 @@
-sudo chown -R www-data:www-data /var/www
+//permissions for apache
 
+sudo chown -R www-data:www-data /var/www
 sudo chmod -R g+rwX /var/www
+
+
+//some helpful git commands 
+
+git branch    			//tells u which branch u using
+git branch <newbranchname>	//lets u create a new branch with name newbranchname which is exact copy of ur current branch
+git checkout <branchname>       //lets u switch the branche to branchname
+
+//in the mean time u been working on ur branch the master might have changed in that case merge ur branch with the master first
+
+git checkout master
+git pull
+git checkout <branchname>
+git merge master
+add , commit , push 
+
+//refer https://www.youtube.com/watch?v=oFYyTZwMyAg for more
