@@ -1,5 +1,5 @@
 body {
-  background-color: #def;
+  background-color: #deeff5;
 }
 
 
@@ -22,7 +22,7 @@ body {
 
 @media screen and (min-width:1000px) {
   body {
-    background-color: #a79151;
+    background-color: #eef7fa;
   }
   header > div {
     width: 100%;
@@ -84,22 +84,24 @@ footer.row {
   display: block;
   flex-wrap: nowrap;
   margin: 1em auto;
-  font-weight: bold;
+  
   font-size: 1em;
   color: #fff;
 }
 
 .navigation button {
   min-width: 7em;
-  background-color: #ff6666;
+  background-color: #add8e6;
   border-radius:10px;
   padding: 1em 1.5em;
   border: 0;
+  font-size:1.2em;
+  color:black;
 }
 
 .navigation button:hover{
-  background-color:#ffd700;
-  color:black;
+  background-color:#c5e3ed;
+  
 }
 
 .navigation li a {
@@ -186,14 +188,14 @@ footer.row {
   max-width: 90%;
 }
 #clan_list button , #DelForm button , #members_list button , #add_member button , #DelMemberForm button , #add_clan button{
-  background-color:#ffc966;
+  background-color:#b5dbe8;
   color:black;
   border-radius: 5px;
 }
 
 #clan_list button:hover , #DelForm button:hover , #members_list button:hover , #add_member button:hover , #DelMemberForm button:hover , #add_clan button {
-background-color:#1919ff;
-color:white;
+background-color:#d6ebf2;
+color:black;
 }
 
 
