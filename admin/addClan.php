@@ -1,3 +1,15 @@
+<?php
+
+include 'db.php';
+
+if(!loggedin())					//no direct access for any nigga
+  header('location: /clanhall.html');
+
+
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>

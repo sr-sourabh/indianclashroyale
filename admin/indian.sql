@@ -7,8 +7,8 @@ SET time_zone = "+00:00";
 --
 -- Database: `indian`
 --
-CREATE DATABASE IF NOT EXISTS `indian` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
-USE `indian`;
+CREATE DATABASE IF NOT EXISTS `a3687005_papa` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE `a3687005_papa`;
 
 -- --------------------------------------------------------
 

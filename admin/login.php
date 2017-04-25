@@ -1,4 +1,18 @@
+<?php
+  include 'db.php';
+  if(isset($_POST['password']))
+  {
+    if($_POST['password'] == 'tryhard!@#')
+      $_SESSION['id']=1;
+      header('location:index.php');
+  }
+
+
+?>
+
 <!DOCTYPE html>
+
+
 
 <html>
   <head>
@@ -14,8 +28,19 @@
       <script>
         w3IncludeHTML();
       </script>
-      <a href="/admin/login.php">ADMIN?</a>
-      
+	<br><br>
+        <form action = "login.php" method="POST">
+        <input type ="text" placeholder="Whats ur mama's name?.." name = "password" required = "" >
+        <button type="submit">GO!</button>
+        </form>
+        <br><br>
+        
+        <form action = "logout.php" method="POST">
+        
+        <button type="submit">LOG OUT!</button>
+        </form>
+
+
 
       <div w3-include-html="/footer.html"></div>
       <script>

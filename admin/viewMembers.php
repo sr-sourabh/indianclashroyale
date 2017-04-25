@@ -12,6 +12,9 @@
 </head>
 <?php
 include 'db.php';
+if(!loggedin())					//no direct access for any nigga
+  header('location: /clanhall.html');
+      
 $player_id="";
 $name="";
 $id="";

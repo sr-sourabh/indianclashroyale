@@ -1,11 +1,15 @@
 <?php
+
+  ob_start();	//for admin login session
+  @session_start();
+  
 // Use below function when not on local server
 // function getConnection(){
 // 	$link = mysql_connect(
 //         getenv('MYSQL_DB_HOST'), 
 //         getenv('MYSQL_DB_USERNAME'), 
 //         getenv('MYSQL_DB_PASSWORD'));
-// 	$db_selected = mysql_select_db('indian', $link);
+// 	$db_selected = mysql_select_db('a3687005_papa', $link);
 // 	return $link;
 // }
 
@@ -72,4 +76,22 @@ function deleteMember($id){
   $result=mysql_query($sql, $link);
   return $result;
 }
+
+function loggedin(){
+
+  if( isset($_SESSION['id'])&& !empty($_SESSION['id']) )
+    return true;
+  else 
+    return false;	
+}
+
+function logout()
+{
+  session_destroy();
+}
+
+
+
+
+
 ?>
