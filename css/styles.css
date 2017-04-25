@@ -5,7 +5,7 @@ body {
 
 @media screen and (max-width:400px) {
   body {
-    background-color: orange;
+    background-color: #eef7fa;
   }
 }
 
@@ -149,12 +149,17 @@ footer.row {
 
 .events button {
   min-width: 10em;
-  background-color: #fd1;
+  background-color: #d6ebf2;
   border-radius: 1em;
   padding: 1em;
   border: 0;
   margin: 1em 1.3em;
-  color: #444;
+  color: black;
+  box-shadow:rgba(110,110,110, .6) 5px 5px 5px;
+}
+
+.events button:hover{
+background-color: white;
 }
 
 .btn {
