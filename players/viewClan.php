@@ -13,8 +13,7 @@
   <?php
     include 'db.php';
 
-    if(!loggedin())					//no direct access for any nigga
-      header('location: /clanhall.html');
+
       
     if(isset($_POST) and isset($_POST['DelMember'])){
       $id=$_POST['DelMember'];
@@ -48,11 +47,11 @@
   
     <div class="container">
       <a href="index.php"><h1>Indian Clash Royale</h1></a>
-      <!--<form id="DelForm" method="post" action="index.php">
+      <form id="DelForm" method="post" action="index.php">
         <h2>Members in <?php echo $categ; ?> 
-          <button type="submit" name="DelClan" id="DelClan" value="<?php echo $clan_id;?>" class="btn btn-danger" >Delete Clan</button>
+         
         </h2>
-      </form>-->
+      </form>
       <form id="members_list" method="post" action="viewMembers.php">
         <?php
         $result=getAllMember($_POST['clan_id']);
@@ -64,8 +63,7 @@
             <br>
           <?php }?>
         <?php }?>
-        <input type="hidden" name="clan_id" id="clan_id" value="<?php echo $_POST['clan_id']; ?>"/>
-        <button type="submit" name="add_member" id="add_member" value="new" class="btn btn-primary btn-block">Add New Member</button>
+        
       </form>
     </div>
     
